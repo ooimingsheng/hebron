@@ -4,6 +4,13 @@ Reference: https://www.youtube.com/watch?v=fEZE3rm8Ma8
 
 1. `sam build`
 2. `sam deploy --guided` for first deployment or just `sam deploy` for subsequent deployments
+3. `sudo systemctl status docker` to check if docker is running
+4. `sudo sam local invoke NotifyFunction -e events/event.json --env-vars  env.json ` to test API
+
+# Changing environment variables locally
+
+1. Update `template.yaml` environment variables
+2. Add variables to `env.json` file
 
 
 # hebron-notifications

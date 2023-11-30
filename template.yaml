@@ -5,6 +5,15 @@ Description: >
 
   Sample SAM Template for hebron-notifications
 
+Parameters:
+  GoogleSheetsUri:
+    Description: 'Required. Connect To Google Sheets API'
+    Type: 'String'
+  TelegramBotUri:
+    Description: 'Required. Connect To Telegram Bot API'
+    Type: 'String'
+
+
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
   Function:
@@ -23,4 +32,7 @@ Resources:
       Runtime: python3.8
       Architectures:
       - x86_64
-
+      Environment:
+        Variables:
+          GOOGLE_SHEETS_TOKEN: !Ref GoogleSheetsUri
+          TELEGRAM_BOT_TOKEN: !Ref TelegramBotUri
