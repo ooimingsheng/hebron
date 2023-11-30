@@ -1,4 +1,6 @@
-Reference: https://www.youtube.com/watch?v=fEZE3rm8Ma8
+Reference: 
+1. Basic AWS Sam tutorial: https://www.youtube.com/watch?v=fEZE3rm8Ma8
+2. Google Client For Python: https://github.com/googleapis/google-api-python-client
 
 # Important commands
 
