@@ -2,6 +2,18 @@ Reference:
 1. Basic AWS Sam tutorial: https://www.youtube.com/watch?v=fEZE3rm8Ma8
 2. Google Client For Python: https://github.com/googleapis/google-api-python-client
 
+# Setting up
+
+To use the SAM CLI, you need the following tools.
+
+* SAM CLI - [Install the SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
+* [Python 3 installed](https://www.python.org/downloads/)
+* Docker - [Install Docker community edition](https://hub.docker.com/search/?type=edition&offering=community)
+
+If you are having trouble installing docker, follow this to troubleshoot: https://askubuntu.com/questions/1468289/docker-install-error
+Once docker is installed, run `sudo service --status-all` and `sudo service docker start` to ensure docker is running.
+
+
 # Important commands
 
 1. `sam build`
@@ -42,14 +54,6 @@ The AWS Toolkit is an open source plug-in for popular IDEs that uses the SAM CLI
 * [Visual Studio](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/welcome.html)
 
 ## Deploy the sample application
-
-The Serverless Application Model Command Line Interface (SAM CLI) is an extension of the AWS CLI that adds functionality for building and testing Lambda applications. It uses Docker to run your functions in an Amazon Linux environment that matches Lambda. It can also emulate your application's build environment and API.
-
-To use the SAM CLI, you need the following tools.
-
-* SAM CLI - [Install the SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
-* [Python 3 installed](https://www.python.org/downloads/)
-* Docker - [Install Docker community edition](https://hub.docker.com/search/?type=edition&offering=community)
 
 To build and deploy your application for the first time, run the following in your shell:
 
